@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from first.views import main
-from first.views import definition, fortune
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',main name="main"),
+    path('',main, name="main"),
     path('first/', include('first.urls')),
 ]

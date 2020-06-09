@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import definition, fortune
+from first.views import definition, fortune, daegil, gil, sogil, margil, hyung
+
 
 app_name = "first"
 urlpatterns = [
@@ -18,8 +19,8 @@ urlpatterns = [
     path('sogil/',sogil, name="sogil"),
 
 
-    path('margil/',fortune, name="margil"),
+    path('margil/',margil, name="margil"),
 
 
-    path('hyung/',fortune, name="hyung"),
+    path('hyung/',hyung, name="hyung"),
 ]
